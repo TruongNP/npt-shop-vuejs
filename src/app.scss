@@ -1,0 +1,37 @@
+.loading {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    border: 3px solid #5cb85c;
+    border-top: 3px solid #fefefe;
+    border-radius: 50%;
+    animation:  loading 1s infinite linear;
+
+  }
+
+  @keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+.product-grid {
+  display: flex;
+  .product {
+    flex: 0 0 calc(100%/3);
+    padding: 0 1.5rem 1rem;
+  }
+}
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-primary {
+    color: #5cb85c !important;
+  }
